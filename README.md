@@ -26,7 +26,7 @@ A simple application for storing information about cities.
 
 ### Adding a City
 
-To update information about an existing city, send a PUT request to the `/api/cities/{id}` endpoint with a JSON body 
+To update information about an existing city, send a PUT request to the `/api/v1/cities/{id}` endpoint with a JSON body 
 containing the updated city information in the following format:
 
     {
@@ -36,7 +36,7 @@ containing the updated city information in the following format:
 
 ### Retrieving a List of Cities
 
-To retrieve a list of all cities, send a GET request to the http://localhost:8080/cities endpoint.
+To retrieve a list of all cities, send a GET request to the http://localhost:8080/api/v1/cities endpoint.
 
 ### Swagger API Documentation
 
