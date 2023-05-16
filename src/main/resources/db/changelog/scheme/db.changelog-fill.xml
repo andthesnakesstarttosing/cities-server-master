@@ -1,0 +1,13 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+    <changeSet id="initial_filling" author="artyom_blinov">
+        <loadData file="classpath:data/cities.csv"
+                  tableName="city_entity">
+            <column name="id" type="BIGINT"/>
+            <column name="title"  header="name" type="VARCHAR(255)" />
+            <column name="photo_url" header="photo" type="TEXT"/>
+        </loadData>
+    </changeSet>
+</databaseChangeLog>
